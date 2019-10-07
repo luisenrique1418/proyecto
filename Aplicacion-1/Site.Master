@@ -1,0 +1,69 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Aplicacion_1.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="Scripts/jquery-3.0.0.min.js"></script>
+
+    <title> Aplicacion 1 </title>
+
+    <style type="text/css">
+        img {
+            margin-top: 2%;
+            width: 100px;
+        }
+
+        #Label1{
+            margin-left: 5%;
+            font-size: 200%;
+        }
+
+        #Label2{
+            margin-left: 20%;
+            font-size: 130%;
+        }
+
+        #Label3{
+            margin-left: 5%;
+            font-size: 130%;
+        }
+
+        nav{
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+
+    </style>
+
+</head>
+<body>
+    <form runat="server">
+        <div>
+            <img alt="" class="img-fluid" src="img/ITL.png" />
+            <asp:Label ID="Label1" runat="server" CssClass="h-75" Text="Instituto Tecnologico de la Laguna"></asp:Label><br />
+            <asp:Label ID="Label2" runat="server" CssClass="h-75" Text="Desarrollo Web en .Net"></asp:Label>
+            <asp:Label ID="Label3" runat="server" CssClass="h-75" Text="Equipo #"></asp:Label>
+            
+            <nav class="navbar navbar-inverse">
+              <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                  <li><a href="#"> Page 1 </a></li>
+                  <li><a href="#"> Page 2 </a></li>
+                  <li><a href="#"> Page 3 </a></li>
+                </ul>
+              </div>
+            </nav>
+
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            </asp:ContentPlaceHolder>
+
+
+        </div>
+    </form>
+
+</body>
+</html>
